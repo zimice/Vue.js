@@ -93,7 +93,7 @@ var app = new Vue({
       this.todos.splice(this.todos.indexOf(todo), 1);
     },
     editTodo: function(todo){
-      this.beforeEidtCahce = todo.title;
+      this.beforeEditCache = todo.title;
       this.editedTodo = todo;
     },
     doneEdit: function (todo){

@@ -9,8 +9,12 @@
   </head>
   <body>
     <div id= "TestVue">
-    <button-counter> </button-counter>
-    
+      <ul id="example-1">
+      <li v-for="item in items" :key="item.message">
+        {{ item.message }}
+      </li>
+    </ul>
+
     </div>
 
 <script src="index.js"></script>
