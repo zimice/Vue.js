@@ -9,12 +9,10 @@
   </head>
   <body>
     <div id= "TestVue">
-      <ul id="example-2">
-  <li v-for="(item, index) in items">
-    {{ parentMessage }} - {{ index }} - {{ item.message }}
-  </li>
-</ul>
-
+      
+  <ul v-for="set in sets">
+    <li v-for="n in even(set)">{{ n }}</li>
+  </ul>
     </div>
 
 <script src="index.js"></script>
